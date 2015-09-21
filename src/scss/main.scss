@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Satisfy|Montserrat:400,700);
 @import url("../../dist/lib/font-awesome/css/font-awesome.min.css");
+
 * {
   box-sizing: border-box;
 }
@@ -36,8 +37,6 @@ header.top {
     font-size: 1.5em;
     float: left;
     width: 20%;
-    position: relative;
-    left: 3.5em;
   }
 
   nav {
@@ -53,7 +52,7 @@ header.top {
     .account {
       position: absolute;
       top: 9px;
-      right: 5.5em;
+      right: 0;
       color: #125688;
       text-decoration: none;
     }
@@ -80,16 +79,8 @@ header.top {
         outline: none;
       }
     }
-
-    i {
-      position: absolute;
-      left: 3em;
-      top: 0.4em;
-      color: #929696;
-      }
-    }
   }
-
+}
 
 
 .photos {
@@ -100,7 +91,7 @@ header.top {
 
   .photo {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     background-color: #fff;
     border: 1px solid #edeeee;
     border-radius: 3px;
@@ -145,7 +136,6 @@ header.top {
     footer {
       padding: 15px;
       position: relative;
-      border-top: 1px solid  #edeeee;
 
       .toggleLikeBtn {
         position: relative;
@@ -198,4 +188,31 @@ header.top {
       }
     }
   }
+}
+
+.photos-leave {
+  opacity: 1;
+}
+
+.photos-leave.photos-leave-active {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.photos-enter {
+  opacity: 0.01;
+}
+
+.photos-enter.photos-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.photos-appear {
+  opacity: 0.01;
+  transition: opacity 1s ease-in;
+}
+
+.photos-appear.photos-appear-active {
+  opacity: 1;
 }
