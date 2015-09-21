@@ -6,7 +6,7 @@ class AddComment extends React.Component {
   onAdd(e) {
     if (e.which === 13) {
       let comment = this.refs.input.getDOMNode().value;
-      let user = 'adam';
+      let user = 'tyler';
       let photoId = this.props.photo._id;
 
       PhotosViewActions.addComment(photoId, user, comment);
