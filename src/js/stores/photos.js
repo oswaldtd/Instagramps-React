@@ -1,4 +1,4 @@
-mport {_} from 'lodash';
+import {_} from 'lodash';
 
 import AppDispatcher from '../dispatchers/app-dispatcher';
 import {EventEmitter} from 'events';

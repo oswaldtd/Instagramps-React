@@ -10,7 +10,7 @@ class SiteNav extends React.Component {
 
           <nav>
             <input type="text" placeholder="search"/>
-            <AccountDropdown user='adam'/>
+            <AccountDropdown user='tyler'/>
           </nav>
         </div>
       </header>
